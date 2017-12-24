@@ -1,19 +1,4 @@
 
-@media (min-width: 768px) {
-    .plone-modal .plone-modal-content {
-        width: 750px
-    }
-}
-@media (min-width: 992px) {
-    .plone-modal .plone-modal-content {
-        width: 970px
-    }
-}
-@media (min-width: 1200px) {
-    .plone-modal .plone-modal-content {
-        width: 1170px
-    }
-}
 
 .select2-drop,
 .mce-floatpanel) {
@@ -1058,9 +1043,6 @@ label .required:after {
 #relatedItemBox .image-icon,
 #relatedItemBox .url {
     display: none
-}
-.plone-btn {
-    border-radius: 0
 }
 @media print {
     #tile-top-navigation,
@@ -6596,9 +6578,6 @@ ul.accordion>li>ul {
 .mosaic-tile-content img {
     max-width: 100%
 }
-[class*="mosaic-plone.app.standardtiles.rawhtml-tile"] h3:first-child {
-    margin: 0
-}
 .side-nav li a {
     font-size: 1.2em;
     font-weight: bold
@@ -6873,16 +6852,6 @@ ul.accordion>li>ul {
 }
 .query-results .panel .title {
     margin-top: 1.5em
-}
-.plone-loader {
-    left: calc(50% - 2.5em)
-}
-.plone-loader div {
-    font-size: 7px;
-    border-top: 1.3em solid rgba(0, 57, 128, 0.7);
-    border-right: 1.3em solid rgba(218, 211, 211, 0.4);
-    border-bottom: 1.3em solid rgba(218, 211, 211, 0.4);
-    border-left: 1.3em solid rgba(218, 211, 211, 0.4)
 }
 a:focus {
     outline: 4px dotted;
