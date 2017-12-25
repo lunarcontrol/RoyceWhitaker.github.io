@@ -489,8 +489,8 @@ p {
 header.main-header {
     z-index: 3;
     position: relative;
-    background: #091221;
-    background-color: #000d1b;
+	background: #ffffff00;
+	background-color: #ffffff00;
     height: 116px
 }
 header.main-header .wrap {
