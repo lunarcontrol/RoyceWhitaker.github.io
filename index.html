@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="home" title="Front page" href="/">
 <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"> -->
-<link rel="stylesheet" href="assets/index.css">
+<link rel="stylesheet" href="assets/css/index.css">
 
 <meta name="theme-color" content="#000000">
 </head>
@@ -28,35 +28,13 @@
 						</div>
 				</button>
 				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav navbar-left main-links" aria-hidden="true">
-						<li class="">
-							<a href="https://www.fbi.gov/wanted">Most Wanted</a>
-						</li>
-						<li class="active">
-							<a href="https://www.fbi.gov/news">News</a>
-						</li>
-						<li class="">
-							<a href="https://www.fbi.gov/investigate">What We Investigate</a>
-						</li>
-						<li class="">
-							<a href="https://www.fbi.gov/services">Services</a>
-						</li>
-						<li class="">
-							<a href="https://www.fbi.gov/resources">Resources</a>
-						</li>
-						<li class="">
-							<a href="https://www.fbi.gov/tips">Submit a Tip</a>
-						</li>
-						<li class="">
-							<a href="https://www.fbi.gov/about">About</a>
-						</li>
-						<li class="">
-							<a href="https://www.fbi.gov/contact-us">Contact Us</a>
-						</li>
-						<li class="">
-							<a href="https://www.fbijobs.gov/" target="_blank">FBI Jobs</a>
-						</li>
-					</ul>
+					<div id="mySidenav" class="sidenav">
+					  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					  <a href="#">About</a>
+					  <a href="#">Services</a>
+					  <a href="#">Clients</a>
+					  <a href="#">Contact</a>
+					</div>
 					<!--
 					<ol class="nav navbar-nav navbar-left fbigov-menu-breadcrumbs">
 						<li class="home-link">
@@ -148,83 +126,6 @@
 			</div>
 		</div>
 	</body>
-<style>
-	/* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 100; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover{
-    color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-	</style>
-	<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-	<script>
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    document.body.style.backgroundColor = "white";
-}
-</script>
-
-<!-- Use any element to open the sidenav -->
-<span onclick="openNav()">open</span>
-
-<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 </div>
 </html>
+<script src="assets/js/index.js" async></script>
