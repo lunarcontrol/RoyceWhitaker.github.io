@@ -513,7 +513,8 @@ header.main-header .fbi-nav-logo a {
     color: #ffffff;
     line-height: 39px;
     font-size: 3.3rem;
-    font-family: "Arial Black", Gadget, sans-serif
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-weight: 900;
 }
 @media (max-width: 650px) {
     header.main-header button.navbar-toggle {
