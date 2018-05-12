@@ -35,7 +35,7 @@
     <div style="display: none;">
       <!-- Clickable label for Vienna -->
       <a class="overlay" id="monster1" href="http://roycewhitaker.me/monster-1.html">Monster 1</a>
-      <a class="overlay" id="monster2" href="http://roycewhitaker.me/monster-2.html">Monster 2</a>
+      <a class="overlay" id="monster2" href="http://roycewhitaker.me/monster-2.html">Dracula</a>
       <a class="overlay" id="monster3" href="http://roycewhitaker.me/monster-3.html">Godzilla</a>
       <a class="overlay" id="monster4" href="http://roycewhitaker.me/monster-4.html">Skin-Walker</a>
       <!-- <div id="marker" title="Marker"></div> -->
@@ -102,16 +102,16 @@
       
       
       
-      var posmonster2 = ol.proj.fromLonLat([32, 57]);
+      var posmonster2 = ol.proj.fromLonLat([-20, 57]);
 
       // Vienna marker
-      var marker1 = new ol.Overlay({
+      var marker2 = new ol.Overlay({
         position: posmonster2,
         positioning: 'center-center',
-        element: document.getElementById('marker1'),
+        element: document.getElementById('marker2'),
         stopEvent: false
       });
-      map.addOverlay(marker1);
+      map.addOverlay(marker2);
 
       // Vienna label
       var monster2 = new ol.Overlay({
