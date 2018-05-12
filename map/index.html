@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Overlay</title>
+    <title>Monster Map</title>
     <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
     <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
@@ -140,6 +140,30 @@
         element: document.getElementById('monster3')
       });
       map.addOverlay(monster3);
+
+      
+      //
+      //next monster
+      //
+      
+      
+      var posmonster4 = ol.proj.fromLonLat([0, 35]);
+
+      // Vienna marker
+      var marker4 = new ol.Overlay({
+        position: posmonster4,
+        positioning: 'center-center',
+        element: document.getElementById('marker4'),
+        stopEvent: false
+      });
+      map.addOverlay(marker4);
+
+      // Vienna label
+      var monster4 = new ol.Overlay({
+        position: posmonster4,
+        element: document.getElementById('monster4')
+      });
+      map.addOverlay(monster4);
 
 
 
