@@ -41,8 +41,8 @@
     <div id="map" class="map"></div>
     <div style="display: none;">
       <!-- Clickable label for Vienna -->
-      <a class="overlay" id="vienna" target="_blank" href="http://en.wikipedia.org/wiki/Vienna">Vienna</a>
-      <a class="overlay" id="sam" target="_blank" href="http://en.wikipedia.org/wiki/Max">Max</a>
+      <a class="overlay" id="monster1" target="_blank" href="http://roycewhitaker.me/monster-1.html">Monster 1</a>
+      <a class="overlay" id="monster2" target="_blank" href="http://roycewhitaker.me/monster-2/.html">Monster 2</a>
       <!-- <div id="marker" title="Marker"></div> -->
       <!-- Popup -->
       <div id="popup" title="Welcome to OpenLayers"></div>
@@ -97,18 +97,21 @@
       map.addOverlay(marker);
 
       // Vienna label
-      var vienna = new ol.Overlay({
+      var monster1 = new ol.Overlay({
         position: pos,
-        element: document.getElementById('vienna')
+        element: document.getElementById('monster1')
       });
-      map.addOverlay(vienna);
-
+      map.addOverlay(monster1);
       
-      var positionofSam = ol.proj.fromLonLat([32, 57]);
+      
+      
+      
+      
+      var posmonster2 = ol.proj.fromLonLat([32, 57]);
 
       // Vienna marker
       var marker1 = new ol.Overlay({
-        position: positionofSam,
+        position: posmonster2,
         positioning: 'center-center',
         element: document.getElementById('marker1'),
         stopEvent: false
@@ -116,11 +119,11 @@
       map.addOverlay(marker1);
 
       // Vienna label
-      var sam = new ol.Overlay({
-        position: positionofSam,
-        element: document.getElementById('sam')
+      var monster2 = new ol.Overlay({
+        position: posmonster2,
+        element: document.getElementById('monster2')
       });
-      map.addOverlay(sam);
+      map.addOverlay(monster2);
 
 
 
