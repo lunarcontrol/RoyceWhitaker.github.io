@@ -39,7 +39,7 @@
       <a class="overlay" id="monster3" href="http://roycewhitaker.me/monster-3.html">Godzilla</a>
       <a class="overlay" id="monster4" href="http://roycewhitaker.me/monster-4.html">Skin-Walker</a>
       <a class="overlay" id="monster5" href="http://roycewhitaker.me/monster-5.html">Medusa</a>
-      <a class="overlay" id="monster5" href="http://roycewhitaker.me/monster-6.html">Medusa</a>
+      <a class="overlay" id="monster6" href="http://roycewhitaker.me/monster-6.html">Babadook</a>
       <!-- <div id="marker" title="Marker"></div> -->
       <!-- Popup -->
       <div id="popup" title="Welcome to OpenLayers"></div>
@@ -171,7 +171,7 @@
 
       
       
-       var posmonster5 = ol.proj.fromLonLat([11, 11]);
+       var posmonster5 = ol.proj.fromLonLat([11, 22]);
 
       // Vienna marker
       var marker5 = new ol.Overlay({
@@ -192,6 +192,26 @@
 
 
 
+      
+      
+      
+       var posmonster6 = ol.proj.fromLonLat([11, 5]);
+
+      // Vienna marker
+      var marker6 = new ol.Overlay({
+        position: posmonster6,
+        positioning: 'center-center',
+        element: document.getElementById('marker6'),
+        stopEvent: false
+      });
+      map.addOverlay(marker6);
+
+      // Vienna label
+      var monster6 = new ol.Overlay({
+        position: posmonster6,
+        element: document.getElementById('monster6')
+      });
+      map.addOverlay(monster6);
 
 
 //       // Popup showing the position the user clicked
