@@ -18,7 +18,7 @@
         background-color: #0FF;
         opacity: 0.5;
       }
-      #monster1, #monster2, #monster3, #monster4 {
+      #monster1, #monster2, #monster3, #monster4, monster5 {
         text-decoration: none;
         color: white;
         font-size: 16pt;
@@ -167,6 +167,25 @@
       map.addOverlay(monster4);
 
 
+      
+      
+       var posmonster5 = ol.proj.fromLonLat([11, 11]);
+
+      // Vienna marker
+      var marker5 = new ol.Overlay({
+        position: posmonster5,
+        positioning: 'center-center',
+        element: document.getElementById('marker5'),
+        stopEvent: false
+      });
+      map.addOverlay(marker5);
+
+      // Vienna label
+      var monster5 = new ol.Overlay({
+        position: posmonster5,
+        element: document.getElementById('monster5')
+      });
+      map.addOverlay(monster4);
 
 
 
