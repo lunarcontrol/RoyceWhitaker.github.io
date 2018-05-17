@@ -1,3 +1,7 @@
+.responsiveImage {
+    max-width: 100%;
+    height: auto;
+}
 .mce-floatpanel) {
     -webkit-filter: blur(1px);
     -moz-filter: blur(1px);
